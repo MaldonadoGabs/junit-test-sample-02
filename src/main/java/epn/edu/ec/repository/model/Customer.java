@@ -13,17 +13,17 @@ import lombok.Data;
 @Builder(toBuilder = true) //Patron de diseño Builder
 @AllArgsConstructor
 @Entity
-@Table(name = "cakes")
-public class Cake {
-    
-    public Cake() {
-    }
+@Table(name = "customers")
+public class Customer {
 
+    public Customer (){
+    }
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
 
-    private String title;
+    private int id;
 
-    private String description;
+    private String name;
+
+    private String phone;
 }
