@@ -18,6 +18,7 @@ public class Customer {
 
     public Customer (){
     }
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
 
@@ -27,3 +28,5 @@ public class Customer {
 
     private String phone;
 }
+
+

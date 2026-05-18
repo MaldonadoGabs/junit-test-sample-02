@@ -41,4 +41,8 @@ public class CustomerService {
                 .phone(customer.getPhone())
                 .build();
     }
+
+    public boolean isVipCustomer(Long customerId) {
+        return false;
+    }
 }
